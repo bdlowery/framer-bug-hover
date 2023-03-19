@@ -1,3 +1,4 @@
+'use client'
 export default function Gallery() {
 	return (
 		<div className="bg-black text-slate-400">
