@@ -1,3 +1,4 @@
+'use client'
 export default function Location() {
 	return (
 		<div className="bg-black text-slate-400">
