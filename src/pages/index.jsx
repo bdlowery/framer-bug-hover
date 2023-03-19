@@ -1,3 +1,4 @@
+'use client'
 import HeaderTest from '@/components/HeaderTest';
 
 // const inter = Inter({ subsets: ["latin"] });
