@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+/* body {
+	overflow-x: hidden;
+} */
+
+/* setup */
+body {
+	-webkit-font-smoothing: antialiased;
+}
+
+body {
+	overflow-x: hidden;
+}
+
+picture {
+	display: block;
+}
+
+picture img {
+	display: block;
+	height: auto;
+	width: 100%;
+}
+
+svg {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+a {
+	display: block;
+	text-decoration: none;
+	color: inherit;
+}
+
+p a {
+	display: inline;
+	color: blue;
+	text-decoration: underline;
+}
+
+:where(:not(:defined)) {
+	display: block;
+}
+
+@layer base {
+	#__next {
+		@apply flex min-h-screen flex-col;
+	}
+
+	.inner-column {
+		@apply mx-auto max-w-7xl px-4;
+	}
+
+	.inner-column-order {
+		@apply mx-auto max-w-xl px-4;
+	}
+
+	.title-voice {
+		@apply text-5xl font-extrabold xs:text-5xl md:text-7xl;
+	}
+
+	.attention-voice {
+		@apply text-4xl font-extrabold xs:text-4xl md:text-5xl;
+	}
+
+	.loud-voice {
+		@apply text-2xl font-bold xs:text-2xl md:text-2xl;
+	}
+
+	.shout-voice {
+		@apply text-xl font-bold xs:text-xl md:text-xl;
+	}
+
+	section:not(:nth-of-type(1)),
+	footer {
+		@apply py-14 md:py-24;
+	}
+
+	footer .inner-column section {
+		@apply py-0 md:py-0;
+	}
+
+	p {
+		@apply leading-relaxed;
+	}
+
+	#contact-us {
+		@apply lg:pb-0;
+	}
+}
